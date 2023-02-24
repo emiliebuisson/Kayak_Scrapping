@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Destinations pour le prix maximal de {{ prix }}$</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='comparateur_page2.css') }}">
+</head>
+<body>
+	<header>
+	    <img src="{{ url_for('static', filename='../static/logo.png') }}" alt="Adventure Travel">
+	    <nav>
+	      <ul>
+	        <li><a href="{{ url_for('accueil') }}"><h1>Adventure Travel</h1></a></li>
+			<li><a href="{{ url_for('comparateur') }}">Comparateur de prix</a></li>
+			<li><a href="{{ url_for('destinations') }}">Destinations</a></li>
+			<li><a href="{{ url_for('statistiques') }}">Statistiques</a></li>
+	      </ul>
+	    </nav>
+	</header>  
+	<div class="container">
+		<div class="header">
+			<h1>Les destinations que nous vous proposons :</h1>
+            <div class="box">
+                <div class="price-box">
+                    <p>Votre prix maximal :</p>
+                    <h2>{{ prix }}$</h2>
+                </div>
+            </div>
+		</div>
+		<div class="destinations">
+			<div class="destination">
+				<div class="destination-info">
+					<h3>Destination 1</h3>
+					<p>Description de la destination 1</p>
+				</div>
+				<div class="price-box">
+					<p>Prix :</p>
+					<h4>100$</h4>
+				</div>
+			</div>
+			<div class="destination">
+				<div class="destination-info">
+					<h3>Destination 2</h3>
+					<p>Description de la destination 2</p>
+				</div>
+				<div class="price-box">
+					<p>Prix :</p>
+					<h4>200$</h4>
+				</div>
+			</div>
+			<div class="destination">
+				<div class="destination-info">
+					<h3>Destination 3</h3>
+					<p>Description de la destination 3</p>
+				</div>
+				<div class="price-box">
+					<p>Prix :</p>
+					<h4>300$</h4>
+				</div>
+			</div>
+			<!-- Ajoutez autant de blocs destination que nécessaire -->
+		</div>
+	</div>
+</body>
+</html>

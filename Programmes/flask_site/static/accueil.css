@@ -1,0 +1,99 @@
+header {
+	display: flex;
+	/* justify-content: space-between; */
+	align-items: center;
+	padding: 1rem;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  header img {
+	width: 80px;
+	margin-right: 1rem;
+  }
+  
+  header h1 {
+	margin: 0;
+	font-size: 1.5rem;
+	font-weight: bold;
+  }
+  
+  nav ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  nav li {
+	margin: 0 1rem;
+  }
+  
+  nav a {
+	text-decoration: none;
+	color: #333;
+	font-size: 1.2rem;
+	transition: color 0.2s ease;
+  }
+  
+  nav a:hover {
+	color: #666;
+  }
+
+  /* Définition des styles pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    /* margin: 0;
+    padding: 0; */
+    background-image: url('/static/fond.jpg');
+	background-repeat: repeat;
+  }
+  
+  /* Définition des styles pour le conteneur principal */
+  .container {
+    max-width: 950px;
+    width: 100%; 
+    margin: 100px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-y: auto;
+  }
+  
+  /* Définition des styles pour le titre principal */
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Définition des styles pour le paragraphe principal */
+  p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* Définition des styles pour les liens */
+  a {
+    color: #0070c0;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  a:hover {
+    color: #004080;
+  }
+
+  .logo {
+    /* margin-left: 20px; */
+    width: 20px;
+    height: auto;
+  }
+  

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mon Site Web</title>
+	<link rel="stylesheet" type="text/css" href="../static/comparateur.css">
+</head>
+<body>
+	<header>
+	    <img src="{{ url_for('static', filename='../static/logo.png') }}" alt="Adventure Travel">
+	    <nav>
+	      <ul>
+			<li><a href="{{ url_for('accueil') }}"><h1>Adventure Travel</h1></a></li>
+			<li><a href="{{ url_for('comparateur') }}">Comparateur de prix</a></li>
+			<li><a href="{{ url_for('destinations') }}">Destinations</a></li>
+			<li><a href="{{ url_for('statistiques') }}">Statistiques</a></li>
+	      </ul>
+	    </nav>
+	</header>
+	
+	<div class="container" style="margin: 20px;">
+		<h1> Votre prix, nos destinations</h1>
+		<p>Veuillez remplir le formulaire ci-dessous avec votre prix maximal pour votre prochain voyage</p>
+		
+		<form action="{{ url_for("gfg")}}" method="post">
+		    <label for="prix">Prix maximal pour votre vol :</label>
+		    <input type="number" id="prix" name="prix" placeholder="Prix">
+		    <button type="submit">Valider</button>
+		</form>
+	</div>
+</body>
+</html>
