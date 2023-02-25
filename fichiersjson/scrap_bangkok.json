@@ -1,0 +1,31 @@
+{"_id":{"$oid":"63f949a653f4a411548331d6"},"price":"445","date":"3/21","day":"Tue","departure":"12:30 pm","arrival":"6:00 am+1","duration":"11h 30m","company":"Thai Airways"}
+{"_id":{"$oid":"63f949a853f4a411548331d7"},"price":"260","date":"3/24","day":"Fri","departure":"11:25 am","arrival":"1:25 pm+2","duration":"44h 00m","company":"Multiple airlines"}
+{"_id":{"$oid":"63f949aa53f4a411548331d8"},"price":"436","date":"3/22","day":"Wed","departure":"2:40 pm","arrival":"12:35 pm+1","duration":"15h 55m","company":"SriLankan Airlines"}
+{"_id":{"$oid":"63f949ae53f4a411548331d9"},"price":"449","date":"3/24","day":"Fri","departure":"12:30 pm","arrival":"6:00 am+1","duration":"11h 30m","company":"Thai Airways"}
+{"_id":{"$oid":"63f949b053f4a411548331da"},"price":"454","date":"3/22","day":"Wed","departure":"8:25 pm","arrival":"3:15 pm+1","duration":"12h 50m","company":"Lufthansa"}
+{"_id":{"$oid":"63f949b253f4a411548331db"},"price":"461","date":"3/21","day":"Tue","departure":"8:25 pm","arrival":"3:15 pm+1","duration":"12h 50m","company":"Lufthansa"}
+{"_id":{"$oid":"63f949b453f4a411548331dc"},"price":"461","date":"3/23","day":"Thu","departure":"8:25 pm","arrival":"3:15 pm+1","duration":"12h 50m","company":"Lufthansa"}
+{"_id":{"$oid":"63f949b653f4a411548331dd"},"price":"455","date":"3/22","day":"Wed","departure":"6:10 pm","arrival":"3:15 pm+1","duration":"15h 05m","company":"Lufthansa"}
+{"_id":{"$oid":"63f949b853f4a411548331de"},"price":"487","date":"3/22","day":"Wed","departure":"12:30 pm","arrival":"6:00 am+1","duration":"11h 30m","company":"Thai Airways"}
+{"_id":{"$oid":"63f949ba53f4a411548331df"},"price":"455","date":"3/22","day":"Wed","departure":"8:00 pm","arrival":"3:15 pm+1","duration":"13h 15m","company":"Lufthansa"}
+{"_id":{"$oid":"63f949bb53f4a411548331e0"},"price":"490","date":"3/23","day":"Thu","departure":"12:30 pm","arrival":"6:00 am+1","duration":"11h 30m","company":"Thai Airways"}
+{"_id":{"$oid":"63f949bd53f4a411548331e1"},"price":"493","date":"3/19","day":"Sun","departure":"12:30 pm","arrival":"6:00 am+1","duration":"11h 30m","company":"Thai Airways"}
+{"_id":{"$oid":"63f949bf53f4a411548331e2"},"price":"490","date":"3/20","day":"Mon","departure":"12:30 pm","arrival":"6:00 am+1","duration":"11h 30m","company":"Thai Airways"}
+{"_id":{"$oid":"63f949c153f4a411548331e3"},"price":"513","date":"3/21","day":"Tue","departure":"6:55 pm","arrival":"3:00 pm+1","duration":"14h 05m","company":"Turkish Airlines"}
+{"_id":{"$oid":"63f949c353f4a411548331e4"},"price":"459","date":"3/21","day":"Tue","departure":"8:00 pm","arrival":"3:15 pm+1","duration":"13h 15m","company":"Lufthansa"}
+{"_id":{"$oid":"63f949c553f4a411548331e5"},"price":"459","date":"3/21","day":"Tue","departure":"6:20 pm","arrival":"3:15 pm+1","duration":"14h 55m","company":"Lufthansa"}
+{"_id":{"$oid":"63f949c753f4a411548331e6"},"price":"622","date":"3/25","day":"Sat","departure":"12:30 pm","arrival":"6:00 am+1","duration":"11h 30m","company":"Thai Airways"}
+{"_id":{"$oid":"63f949c953f4a411548331e7"},"price":"480","date":"3/19","day":"Sun","departure":"11:00 am","arrival":"8:55 am+1","duration":"15h 55m","company":"Gulf Air"}
+{"_id":{"$oid":"63f949cb53f4a411548331e8"},"price":"480","date":"3/22","day":"Wed","departure":"11:00 am","arrival":"8:55 am+1","duration":"15h 55m","company":"Gulf Air"}
+{"_id":{"$oid":"63f949cc53f4a411548331e9"},"price":"522","date":"3/21","day":"Tue","departure":"10:50 am","arrival":"9:05 am+1","duration":"16h 15m","company":"Finnair"}
+{"_id":{"$oid":"63f949ce53f4a411548331ea"},"price":"504","date":"3/22","day":"Wed","departure":"7:10 am","arrival":"6:25 am+1","duration":"17h 15m","company":"Finnair"}
+{"_id":{"$oid":"63f949d053f4a411548331eb"},"price":"478","date":"3/25","day":"Sat","departure":"9:00 pm","arrival":"7:35 pm+1","duration":"16h 35m","company":"Air India"}
+{"_id":{"$oid":"63f949d253f4a411548331ec"},"price":"504","date":"3/23","day":"Thu","departure":"10:50 am","arrival":"9:05 am+1","duration":"16h 15m","company":"Finnair"}
+{"_id":{"$oid":"63f949d453f4a411548331ed"},"price":"485","date":"3/20","day":"Mon","departure":"11:00 am","arrival":"8:55 am+1","duration":"15h 55m","company":"Gulf Air"}
+{"_id":{"$oid":"63f949d653f4a411548331ee"},"price":"490","date":"3/24","day":"Fri","departure":"11:00 am","arrival":"8:55 am+1","duration":"15h 55m","company":"Gulf Air"}
+{"_id":{"$oid":"63f949d853f4a411548331ef"},"price":"468","date":"3/21","day":"Tue","departure":"3:30 pm","arrival":"3:00 pm+1","duration":"17h 30m","company":"Turkish Airlines"}
+{"_id":{"$oid":"63f949d953f4a411548331f0"},"price":"547","date":"3/22","day":"Wed","departure":"3:20 pm","arrival":"12:05 pm+1","duration":"14h 45m","company":"Qatar Airways"}
+{"_id":{"$oid":"63f949db53f4a411548331f1"},"price":"523","date":"3/23","day":"Thu","departure":"8:00 pm","arrival":"3:15 pm+1","duration":"13h 15m","company":"Lufthansa"}
+{"_id":{"$oid":"63f949dd53f4a411548331f2"},"price":"504","date":"3/24","day":"Fri","departure":"7:10 am","arrival":"6:25 am+1","duration":"17h 15m","company":"Finnair"}
+{"_id":{"$oid":"63f949df53f4a411548331f3"},"price":"526","date":"3/20","day":"Mon","departure":"8:00 pm","arrival":"3:15 pm+1","duration":"13h 15m","company":"Lufthansa"}
+{"_id":{"$oid":"63f949e153f4a411548331f4"},"price":"481","date":"3/20","day":"Mon","departure":"9:00 pm","arrival":"7:20 pm+1","duration":"16h 20m","company":"Air India"}

@@ -1,58 +1,62 @@
-header {
+  /* Correspond au corps de la page */
+body {
+	background-color: #f4f4f4;
+	font-family: Arial, sans-serif;
+    background-image: url('/static/fond.jpg');
+	background-repeat: repeat;
+  }
+  
+  /* Correspond à la banière*/
+  header {
 	display: flex;
 	/* justify-content: space-between; */
 	align-items: center;
 	padding: 1rem;
 	background-color: #fff;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
+  	}
   
-  header img {
-	width: 80px;
-	margin-right: 1rem;
-  }
-  
-  header h1 {
-	margin: 0;
-	font-size: 1.5rem;
-	font-weight: bold;
-  }
-  
-  nav ul {
-	display: flex;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-  }
-  
-  nav li {
-	margin: 0 1rem;
-  }
-  
-  nav a {
-	text-decoration: none;
-	color: #333;
-	font-size: 1.2rem;
-	transition: color 0.2s ease;
-  }
-  
-  nav a:hover {
-	color: #666;
-  }
-   
-body {
-	background-color: #f4f4f4;
-	font-family: Arial, sans-serif;
-    background-image: url('/static/fond.jpg');
-	background-repeat: repeat;
-}
+	header img {
+		width: 80px;
+		margin-right: 1rem;
+	}
+	
+	header h1 {
+		margin: 0;
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+	
+	nav ul {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	nav li {
+		margin: 0 1rem;
+	}
+	
+	nav a {
+		text-decoration: none;
+		color: #333;
+		font-size: 1.2rem;
+		transition: color 0.2s ease;
+	}
+	
+	nav a:hover {
+		color: #666;
+	}
 
+  /* Correspond au conteneur principal*/
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 30px;
 }
 
+  /* Correspond au texte principal*/
 .header {
 	display: flex;
 	flex-wrap: wrap;
@@ -67,6 +71,7 @@ body {
 	color: #333;
 }
 
+  /* Correspond à la box prix */
 .box {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -91,7 +96,8 @@ body {
     font-weight: bold;
     margin: 0;
   }
-  
+
+  /* Correspond aux éléments pour les destinations proposées */
 .destinations {
 	display: flex;
 	flex-wrap: wrap;

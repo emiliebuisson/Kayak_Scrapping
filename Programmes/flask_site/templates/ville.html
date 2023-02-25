@@ -1,26 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mon Site Web</title>
-	<link rel="stylesheet" type="text/css" href="../static/comparateur.css">
+    <title>Adventure Travel - Destinations</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='destinations.css') }}">
 </head>
 <body>
-	<header>
-	    <img src="{{ url_for('static', filename='../static/logo.png') }}" alt="Adventure Travel">
-	    <nav>
-	      <ul>
-			<li><a href="{{ url_for('accueil') }}"><h1>Adventure Travel</h1></a></li>
-			<li><a href="{{ url_for('comparateur') }}">Comparateur de prix</a></li>
-			<li><a href="{{ url_for('destinations') }}">Destinations</a></li>
-			<li><a href="{{ url_for('statistiques') }}">Statistiques</a></li>
-	      </ul>
-	    </nav>
-	</header>
-	
-	<div class="container" style="margin: 20px;">
-		<h1> Votre prix, nos destinations</h1>
-		<p>Veuillez remplir le formulaire ci-dessous avec votre prix maximal pour votre prochain voyage</p>
-		
-	</div>
+    <header>
+        <img src="{{ url_for('static', filename='../static/logo.png') }}" alt="Adventure Travel">
+        <nav>
+          <ul>
+            <li><a href="/"><h1>Adventure Travel</h1></a></li>
+			<li><a href="/comparateur">Comparateur de prix</a></li>
+			<li><a href="/destinations">Destinations</a></li>
+			<li><a href="/statistiques">Statistiques</a></li>
+          </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="destinations">
+            <div class="header">
+                <h1>Vols que nous vous proposons pour {{ville}}</h1>
+            </div>
+            <div class="destination">
+                <div class="destination-info">
+                    <h3>Destination 1</h3>
+                    <p>Description de la destination 1</p>
+                </div>
+                <div class="price-box">
+                    <p>Prix :</p>
+                    <h4>100$</h4>
+                </div>
+            </div>
+            <div class="destination">
+                <div class="destination-info">
+                    <h3>Destination 2</h3>
+                    <p>Description de la destination 2</p>
+                </div>
+                <div class="price-box">
+                    <p>Prix :</p>
+                    <h4>200$</h4>
+                </div>
+            </div>
+            <div class="destination">
+                <div class="destination-info">
+                    <h3>Destination 3</h3>
+                    <p>Description de la destination 3</p>
+                </div>
+                <div class="price-box">
+                    <p>Prix :</p>
+                    <h4>300$</h4>
+                </div>
+            </div>
+            <!-- Ajout de blocs si besoin -->
+        </div>
+    </div>
 </body>
 </html>
+
+

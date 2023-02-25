@@ -1,0 +1,31 @@
+{"_id":{"$oid":"63f9485753f4a4115483318a"},"price":"73","date":"3/22","day":"Wed","departure":"6:25 am","arrival":"8:55 am","duration":"2h 30m","company":"Transavia France"}
+{"_id":{"$oid":"63f9485953f4a4115483318b"},"price":"73","date":"3/19","day":"Sun","departure":"6:15 am","arrival":"8:45 am","duration":"2h 30m","company":"Transavia France"}
+{"_id":{"$oid":"63f9485b53f4a4115483318c"},"price":"83","date":"3/22","day":"Wed","departure":"8:50 pm","arrival":"11:15 pm","duration":"2h 25m","company":"Tunisair"}
+{"_id":{"$oid":"63f9485d53f4a4115483318d"},"price":"73","date":"3/21","day":"Tue","departure":"6:25 am","arrival":"8:55 am","duration":"2h 30m","company":"Transavia France"}
+{"_id":{"$oid":"63f9485f53f4a4115483318e"},"price":"83","date":"3/22","day":"Wed","departure":"9:45 am","arrival":"12:10 pm","duration":"2h 25m","company":"Tunisair"}
+{"_id":{"$oid":"63f9486153f4a4115483318f"},"price":"73","date":"3/20","day":"Mon","departure":"6:25 am","arrival":"8:55 am","duration":"2h 30m","company":"Transavia France"}
+{"_id":{"$oid":"63f9486353f4a41154833190"},"price":"77","date":"3/21","day":"Tue","departure":"4:15 pm","arrival":"6:45 pm","duration":"2h 30m","company":"Transavia France"}
+{"_id":{"$oid":"63f9486453f4a41154833191"},"price":"77","date":"3/21","day":"Tue","departure":"9:40 am","arrival":"12:10 pm","duration":"2h 30m","company":"Transavia France"}
+{"_id":{"$oid":"63f9486653f4a41154833192"},"price":"73","date":"3/22","day":"Wed","departure":"6:25 am","arrival":"8:55 am","duration":"2h 30m","company":"Transavia France"}
+{"_id":{"$oid":"63f9486853f4a41154833193"},"price":"88","date":"3/25","day":"Sat","departure":"8:50 pm","arrival":"11:15 pm","duration":"2h 25m","company":"Tunisair"}
+{"_id":{"$oid":"63f9486a53f4a41154833194"},"price":"93","date":"3/22","day":"Wed","departure":"2:00 pm","arrival":"4:30 pm","duration":"2h 30m","company":"Tunisair"}
+{"_id":{"$oid":"63f9486c53f4a41154833195"},"price":"88","date":"3/21","day":"Tue","departure":"8:50 pm","arrival":"11:15 pm","duration":"2h 25m","company":"Tunisair"}
+{"_id":{"$oid":"63f9486e53f4a41154833196"},"price":"80","date":"3/22","day":"Wed","departure":"9:25 am","arrival":"11:55 am","duration":"2h 30m","company":"Transavia France"}
+{"_id":{"$oid":"63f9487053f4a41154833197"},"price":"80","date":"3/22","day":"Wed","departure":"4:15 pm","arrival":"6:45 pm","duration":"2h 30m","company":"Transavia France"}
+{"_id":{"$oid":"63f9487253f4a41154833198"},"price":"88","date":"3/21","day":"Tue","departure":"9:45 am","arrival":"12:10 pm","duration":"2h 25m","company":"Tunisair"}
+{"_id":{"$oid":"63f9487453f4a41154833199"},"price":"84","date":"3/20","day":"Mon","departure":"10:15 am","arrival":"12:45 pm","duration":"2h 30m","company":"Transavia France"}
+{"_id":{"$oid":"63f9487553f4a4115483319a"},"price":"89","date":"3/24","day":"Fri","departure":"8:50 pm","arrival":"11:15 pm","duration":"2h 25m","company":"Tunisair"}
+{"_id":{"$oid":"63f9487753f4a4115483319b"},"price":"89","date":"3/23","day":"Thu","departure":"8:50 pm","arrival":"11:15 pm","duration":"2h 25m","company":"Tunisair"}
+{"_id":{"$oid":"63f9487953f4a4115483319c"},"price":"93","date":"3/19","day":"Sun","departure":"8:45 am","arrival":"11:15 am","duration":"2h 30m","company":"Transavia France"}
+{"_id":{"$oid":"63f9487b53f4a4115483319d"},"price":"94","date":"3/21","day":"Tue","departure":"2:00 pm","arrival":"4:30 pm","duration":"2h 30m","company":"Tunisair"}
+{"_id":{"$oid":"63f9487d53f4a4115483319e"},"price":"93","date":"3/22","day":"Wed","departure":"6:30 pm","arrival":"8:55 pm","duration":"2h 25m","company":"Tunisair"}
+{"_id":{"$oid":"63f9487f53f4a4115483319f"},"price":"93","date":"3/22","day":"Wed","departure":"11:30 am","arrival":"1:55 pm","duration":"2h 25m","company":"Nouvelair"}
+{"_id":{"$oid":"63f9488153f4a411548331a0"},"price":"94","date":"3/21","day":"Tue","departure":"6:30 pm","arrival":"8:55 pm","duration":"2h 25m","company":"Tunisair"}
+{"_id":{"$oid":"63f9488253f4a411548331a1"},"price":"95","date":"3/20","day":"Mon","departure":"11:30 am","arrival":"1:55 pm","duration":"2h 25m","company":"Nouvelair"}
+{"_id":{"$oid":"63f9488453f4a411548331a2"},"price":"94","date":"3/20","day":"Mon","departure":"8:50 pm","arrival":"11:15 pm","duration":"2h 25m","company":"Tunisair"}
+{"_id":{"$oid":"63f9488653f4a411548331a3"},"price":"120","date":"3/19","day":"Sun","departure":"7:05 pm","arrival":"9:35 pm","duration":"2h 30m","company":"Tunisair"}
+{"_id":{"$oid":"63f9488853f4a411548331a4"},"price":"99","date":"3/23","day":"Thu","departure":"6:30 pm","arrival":"9:00 pm","duration":"2h 30m","company":"Tunisair"}
+{"_id":{"$oid":"63f9488a53f4a411548331a5"},"price":"93","date":"3/20","day":"Mon","departure":"4:15 pm","arrival":"6:45 pm","duration":"2h 30m","company":"Transavia France"}
+{"_id":{"$oid":"63f9488c53f4a411548331a6"},"price":"98","date":"3/24","day":"Fri","departure":"6:30 pm","arrival":"8:55 pm","duration":"2h 25m","company":"Nouvelair"}
+{"_id":{"$oid":"63f9488e53f4a411548331a7"},"price":"93","date":"3/24","day":"Fri","departure":"4:15 pm","arrival":"6:45 pm","duration":"2h 30m","company":"Transavia France"}
+{"_id":{"$oid":"63f9489053f4a411548331a8"},"price":"99","date":"3/23","day":"Thu","departure":"9:45 am","arrival":"12:10 pm","duration":"2h 25m","company":"Tunisair"}

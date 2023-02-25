@@ -9,17 +9,17 @@
         <img src="{{ url_for('static', filename='../static/logo.png') }}" alt="Adventure Travel">
         <nav>
           <ul>
-            <li><a href="{{ url_for('accueil') }}"><h1>Adventure Travel</h1></a></li>
-            <li><a href="{{ url_for('comparateur') }}">Comparateur de prix</a></li>
-            <li><a href="{{ url_for('destinations') }}">Destinations</a></li>
-            <li><a href="{{ url_for('statistiques') }}">Statistiques</a></li>
+            <li><a href="/"><h1>Adventure Travel</h1></a></li>
+			<li><a href="/comparateur">Comparateur de prix</a></li>
+			<li><a href="/destinations">Destinations</a></li>
+			<li><a href="/statistiques">Statistiques</a></li>
           </ul>
         </nav>
     </header>
     <div class="container">
         <div class="destinations">
 			<form method="POST">
-				<label for="ville">Choisissez une ville :</label>
+				<label for="ville">Choisissez une ville d'arrivée :</label>
 				<select id="ville" name="ville">
 				  {% for ville in villes %}
 					<option value="{{ ville }}">{{ ville }}</option>
@@ -29,7 +29,7 @@
 				<button type="submit">Valider</button>
 			  </form>
             <div class="header">
-                <h1>Ensemble des destinations que nous vous proposons</h1>
+                <h1>Ensemble des vols que nous vous proposons</h1>
             </div>
             <div class="destination">
                 <div class="destination-info">
@@ -61,7 +61,7 @@
                     <h4>300$</h4>
                 </div>
             </div>
-            <!-- Ajoutez autant de blocs destination que nécessaire -->
+            <!-- Ajout de blocs si besoin-->
         </div>
     </div>
 </body>

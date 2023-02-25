@@ -1,0 +1,31 @@
+{"_id":{"$oid":"63f94a6153f4a411548331fe"},"price":"308","date":"3/25","day":"Sat","departure":"5:55 pm","arrival":"9:15 pm","duration":"8h 20m","company":"French Bee"}
+{"_id":{"$oid":"63f94a6353f4a411548331ff"},"price":"242","date":"3/25","day":"Sat","departure":"5:55 pm","arrival":"9:15 pm","duration":"8h 20m","company":"French Bee"}
+{"_id":{"$oid":"63f94a6553f4a41154833200"},"price":"268","date":"3/25","day":"Sat","departure":"5:55 pm","arrival":"9:15 pm","duration":"8h 20m","company":"Air Caraïbes"}
+{"_id":{"$oid":"63f94a6753f4a41154833201"},"price":"253","date":"3/24","day":"Fri","departure":"5:55 pm","arrival":"9:15 pm","duration":"8h 20m","company":"French Bee"}
+{"_id":{"$oid":"63f94a6853f4a41154833202"},"price":"328","date":"3/24","day":"Fri","departure":"5:55 pm","arrival":"9:15 pm","duration":"8h 20m","company":"Air Caraïbes"}
+{"_id":{"$oid":"63f94a6a53f4a41154833203"},"price":"380","date":"3/20","day":"Mon","departure":"5:55 pm","arrival":"9:15 pm","duration":"8h 20m","company":"Air Caraïbes"}
+{"_id":{"$oid":"63f94a6c53f4a41154833204"},"price":"358","date":"3/20","day":"Mon","departure":"5:55 pm","arrival":"9:15 pm","duration":"8h 20m","company":"French Bee"}
+{"_id":{"$oid":"63f94a6e53f4a41154833205"},"price":"334","date":"3/23","day":"Thu","departure":"11:30 am","arrival":"5:50 pm","duration":"11h 20m","company":"PLAY"}
+{"_id":{"$oid":"63f94a7053f4a41154833206"},"price":"498","date":"3/19","day":"Sun","departure":"5:55 pm","arrival":"9:15 pm","duration":"8h 20m","company":"Air Caraïbes"}
+{"_id":{"$oid":"63f94a7153f4a41154833207"},"price":"474","date":"3/19","day":"Sun","departure":"5:55 pm","arrival":"9:15 pm","duration":"8h 20m","company":"French Bee"}
+{"_id":{"$oid":"63f94a7353f4a41154833208"},"price":"331","date":"3/23","day":"Thu","departure":"2:05 pm","arrival":"8:55 pm","duration":"11h 50m","company":"Azores Airlines"}
+{"_id":{"$oid":"63f94a7553f4a41154833209"},"price":"343","date":"3/22","day":"Wed","departure":"11:30 am","arrival":"5:50 pm","duration":"11h 20m","company":"PLAY"}
+{"_id":{"$oid":"63f94a7753f4a4115483320a"},"price":"350","date":"3/24","day":"Fri","departure":"7:20 am","arrival":"4:35 pm","duration":"14h 15m","company":"easyJet, Norse Atlantic Airways"}
+{"_id":{"$oid":"63f94a7953f4a4115483320b"},"price":"336","date":"3/25","day":"Sat","departure":"2:05 pm","arrival":"8:55 pm","duration":"11h 50m","company":"Azores Airlines"}
+{"_id":{"$oid":"63f94a7b53f4a4115483320c"},"price":"400","date":"3/23","day":"Thu","departure":"10:05 am","arrival":"5:20 pm","duration":"12h 15m","company":"Aer Lingus"}
+{"_id":{"$oid":"63f94a7d53f4a4115483320d"},"price":"458","date":"3/24","day":"Fri","departure":"11:30 am","arrival":"5:50 pm","duration":"11h 20m","company":"PLAY"}
+{"_id":{"$oid":"63f94a7f53f4a4115483320e"},"price":"625","date":"3/22","day":"Wed","departure":"9:30 am","arrival":"1:00 pm","duration":"8h 30m","company":"Finnair"}
+{"_id":{"$oid":"63f94a8153f4a4115483320f"},"price":"361","date":"3/25","day":"Sat","departure":"12:30 pm","arrival":"10:00 pm","duration":"14h 30m","company":"Transavia France, Norse Atlantic Airways"}
+{"_id":{"$oid":"63f94a8253f4a41154833210"},"price":"360","date":"3/21","day":"Tue","departure":"7:20 am","arrival":"4:35 pm","duration":"14h 15m","company":"easyJet, Norse Atlantic Airways"}
+{"_id":{"$oid":"63f94a8453f4a41154833211"},"price":"401","date":"3/22","day":"Wed","departure":"11:30 am","arrival":"11:45 pm","duration":"17h 15m","company":"Turkish Airlines"}
+{"_id":{"$oid":"63f94a8653f4a41154833212"},"price":"427","date":"3/23","day":"Thu","departure":"8:30 am","arrival":"3:05 pm","duration":"11h 35m","company":"Lufthansa, Condor"}
+{"_id":{"$oid":"63f94a8853f4a41154833213"},"price":"421","date":"3/24","day":"Fri","departure":"1:20 pm","arrival":"8:20 pm","duration":"12h 00m","company":"Aer Lingus"}
+{"_id":{"$oid":"63f94a8a53f4a41154833214"},"price":"627","date":"3/22","day":"Wed","departure":"9:30 am","arrival":"1:00 pm","duration":"8h 30m","company":"Iberia"}
+{"_id":{"$oid":"63f94a8c53f4a41154833215"},"price":"396","date":"3/23","day":"Thu","departure":"8:35 am","arrival":"3:50 pm","duration":"12h 15m","company":"easyJet, Neos Air"}
+{"_id":{"$oid":"63f94a8e53f4a41154833216"},"price":"450","date":"3/24","day":"Fri","departure":"8:30 am","arrival":"3:05 pm","duration":"11h 35m","company":"Lufthansa, Condor"}
+{"_id":{"$oid":"63f94a9053f4a41154833217"},"price":"427","date":"3/23","day":"Thu","departure":"7:25 am","arrival":"3:05 pm","duration":"12h 40m","company":"Lufthansa, Condor"}
+{"_id":{"$oid":"63f94a9253f4a41154833218"},"price":"454","date":"3/22","day":"Wed","departure":"1:20 pm","arrival":"8:20 pm","duration":"12h 00m","company":"Aer Lingus"}
+{"_id":{"$oid":"63f94a9353f4a41154833219"},"price":"447","date":"3/24","day":"Fri","departure":"7:25 am","arrival":"3:05 pm","duration":"12h 40m","company":"Lufthansa, Condor"}
+{"_id":{"$oid":"63f94a9553f4a4115483321a"},"price":"386","date":"3/25","day":"Sat","departure":"12:30 pm","arrival":"10:00 pm","duration":"14h 30m","company":"Transavia, Norse Atlantic Airways"}
+{"_id":{"$oid":"63f94a9753f4a4115483321b"},"price":"388","date":"3/23","day":"Thu","departure":"12:40 pm","arrival":"10:00 pm","duration":"14h 20m","company":"Transavia France, Norse Atlantic Airways"}
+{"_id":{"$oid":"63f94a9953f4a4115483321c"},"price":"504","date":"3/23","day":"Thu","departure":"1:00 pm","arrival":"7:10 pm","duration":"11h 10m","company":"Icelandair"}

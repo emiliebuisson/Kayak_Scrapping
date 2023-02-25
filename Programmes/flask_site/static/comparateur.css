@@ -1,45 +1,4 @@
-header {
-	display: flex;
-	/* justify-content: space-between; */
-	align-items: center;
-	padding: 1rem;
-	background-color: #fff;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  
-  header img {
-	width: 80px;
-	margin-right: 1rem;
-  }
-  
-  header h1 {
-	margin: 0;
-	font-size: 1.5rem;
-	font-weight: bold;
-  }
-  
-  nav ul {
-	display: flex;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-  }
-  
-  nav li {
-	margin: 0 1rem;
-  }
-  
-  nav a {
-	text-decoration: none;
-	color: #333;
-	font-size: 1.2rem;
-	transition: color 0.2s ease;
-  }
-  
-  nav a:hover {
-	color: #666;
-  }
-  
+ /* Correspond au corps de la page */
   body {
 	align-items: center;
 	margin: 0;
@@ -47,21 +6,67 @@ header {
 	background-image: url('/static/fond.jpg');
 	background-repeat: repeat;
   }
+
+  /* Correspond à la banière*/
+  header {
+	display: flex;
+	/* justify-content: space-between; */
+	align-items: center;
+	padding: 1rem;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	}
+	
+	header img {
+		width: 80px;
+		margin-right: 1rem;
+	}
+	
+	header h1 {
+		margin: 0;
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+	
+	nav ul {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	nav li {
+		margin: 0 1rem;
+	}
+	
+	nav a {
+		text-decoration: none;
+		color: #333;
+		font-size: 1.2rem;
+		transition: color 0.2s ease;
+	}
+	
+	nav a:hover {
+		color: #666;
+	}
   
+  /* Correspond au titre principal*/ 
   h1 {
 	font-size: 2.5rem;
 	text-align: center;
 	margin: 0;
 	margin-top: 3rem;
   }
-  
+ 
+  /* Correspond au texte au dessus du formulaire */ 
   p {
 	text-align: center;
 	margin: 0;
 	margin-top: 5rem;
 	margin-bottom: 2rem;
   }
-  
+
+  /* Correspond au formulaire */
   form {
 	display: flex;
 	flex-direction: column;

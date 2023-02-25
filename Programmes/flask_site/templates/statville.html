@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Adventure Travel - Statistiques</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='destinations.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='statville.css') }}">
 </head>
 <body>
     <header>
@@ -18,20 +18,11 @@
     </header>
     <div class="container">
         <div class="destinations">
-          <div class="header">
-            <h1>Accéder aux statistiques</h1>
-          </div>
-          <form method="POST">
-            <label for="ville">Choisissez une ville d'arrivée :</label>
-            <select id="ville" name="ville">
-              {% for ville in villes %}
-              <option value="{{ ville }}">{{ ville }}</option>
-              {% endfor %}
-            </select>
-            <br><br>
-            <button type="submit">Valider</button>
-          </form>
-            
+
+            <div class="header">
+                <h1>Statistiques de Paris - {{ville}}</h1>
+            </div>
+
         </div>
     </div>
 </body>

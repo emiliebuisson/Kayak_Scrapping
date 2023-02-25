@@ -1,0 +1,31 @@
+{"_id":{"$oid":"63f94c1253f4a41154833264"},"price":"47","date":"3/25","day":"Sat","departure":"9:35 am","arrival":"11:40 am","duration":"2h 05m","company":"Ryanair"}
+{"_id":{"$oid":"63f94c1353f4a41154833265"},"price":"26","date":"3/25","day":"Sat","departure":"3:40 pm","arrival":"10:00 am+1","duration":"17h 20m","company":"Ryanair"}
+{"_id":{"$oid":"63f94c1553f4a41154833266"},"price":"44","date":"3/22","day":"Wed","departure":"12:30 pm","arrival":"2:50 pm","duration":"2h 20m","company":"easyJet"}
+{"_id":{"$oid":"63f94c1753f4a41154833267"},"price":"48","date":"3/24","day":"Fri","departure":"2:00 pm","arrival":"4:05 pm","duration":"2h 05m","company":"Ryanair"}
+{"_id":{"$oid":"63f94c1953f4a41154833268"},"price":"49","date":"3/22","day":"Wed","departure":"6:20 am","arrival":"8:25 am","duration":"2h 05m","company":"Transavia France"}
+{"_id":{"$oid":"63f94c1b53f4a41154833269"},"price":"58","date":"3/22","day":"Wed","departure":"2:00 pm","arrival":"4:05 pm","duration":"2h 05m","company":"Transavia France"}
+{"_id":{"$oid":"63f94c1d53f4a4115483326a"},"price":"55","date":"3/23","day":"Thu","departure":"6:20 am","arrival":"8:25 am","duration":"2h 05m","company":"Transavia France"}
+{"_id":{"$oid":"63f94c1f53f4a4115483326b"},"price":"57","date":"3/23","day":"Thu","departure":"7:10 am","arrival":"9:25 am","duration":"2h 15m","company":"easyJet"}
+{"_id":{"$oid":"63f94c2153f4a4115483326c"},"price":"78","date":"3/25","day":"Sat","departure":"7:40 pm","arrival":"9:40 pm","duration":"2h 00m","company":"Air Europa"}
+{"_id":{"$oid":"63f94c2353f4a4115483326d"},"price":"69","date":"3/23","day":"Thu","departure":"3:15 pm","arrival":"5:20 pm","duration":"2h 05m","company":"Ryanair"}
+{"_id":{"$oid":"63f94c2453f4a4115483326e"},"price":"59","date":"3/22","day":"Wed","departure":"7:30 am","arrival":"9:45 am","duration":"2h 15m","company":"Iberia"}
+{"_id":{"$oid":"63f94c2653f4a4115483326f"},"price":"58","date":"3/22","day":"Wed","departure":"10:40 am","arrival":"12:45 pm","duration":"2h 05m","company":"Transavia France"}
+{"_id":{"$oid":"63f94c2853f4a41154833270"},"price":"59","date":"3/22","day":"Wed","departure":"7:30 am","arrival":"9:45 am","duration":"2h 15m","company":"Iberia Express"}
+{"_id":{"$oid":"63f94c2a53f4a41154833271"},"price":"59","date":"3/22","day":"Wed","departure":"12:30 pm","arrival":"2:50 pm","duration":"2h 20m","company":"easyJet Europe"}
+{"_id":{"$oid":"63f94c2c53f4a41154833272"},"price":"69","date":"3/19","day":"Sun","departure":"2:55 pm","arrival":"5:00 pm","duration":"2h 05m","company":"Ryanair"}
+{"_id":{"$oid":"63f94c2e53f4a41154833273"},"price":"85","date":"3/25","day":"Sat","departure":"5:05 pm","arrival":"7:05 pm","duration":"2h 00m","company":"Air Europa"}
+{"_id":{"$oid":"63f94c3053f4a41154833274"},"price":"64","date":"3/22","day":"Wed","departure":"11:40 am","arrival":"1:55 pm","duration":"2h 15m","company":"Iberia"}
+{"_id":{"$oid":"63f94c3153f4a41154833275"},"price":"62","date":"3/21","day":"Tue","departure":"6:40 am","arrival":"8:45 am","duration":"2h 05m","company":"Ryanair"}
+{"_id":{"$oid":"63f94c3353f4a41154833276"},"price":"68","date":"3/22","day":"Wed","departure":"12:40 pm","arrival":"2:45 pm","duration":"2h 05m","company":"Iberia"}
+{"_id":{"$oid":"63f94c3553f4a41154833277"},"price":"78","date":"3/23","day":"Thu","departure":"7:30 am","arrival":"9:35 am","duration":"2h 05m","company":"Iberia"}
+{"_id":{"$oid":"63f94c3753f4a41154833278"},"price":"64","date":"3/22","day":"Wed","departure":"11:40 am","arrival":"1:55 pm","duration":"2h 15m","company":"Iberia Express"}
+{"_id":{"$oid":"63f94c3953f4a41154833279"},"price":"68","date":"3/22","day":"Wed","departure":"10:15 am","arrival":"12:20 pm","duration":"2h 05m","company":"Iberia"}
+{"_id":{"$oid":"63f94c3b53f4a4115483327a"},"price":"86","date":"3/22","day":"Wed","departure":"5:05 pm","arrival":"7:05 pm","duration":"2h 00m","company":"Air Europa"}
+{"_id":{"$oid":"63f94c3d53f4a4115483327b"},"price":"72","date":"3/22","day":"Wed","departure":"7:30 am","arrival":"9:35 am","duration":"2h 05m","company":"Iberia"}
+{"_id":{"$oid":"63f94c3e53f4a4115483327c"},"price":"85","date":"3/24","day":"Fri","departure":"8:55 pm","arrival":"11:00 pm","duration":"2h 05m","company":"Iberia"}
+{"_id":{"$oid":"63f94c4053f4a4115483327d"},"price":"84","date":"3/24","day":"Fri","departure":"4:30 pm","arrival":"6:40 pm","duration":"2h 10m","company":"Transavia France"}
+{"_id":{"$oid":"63f94c4253f4a4115483327e"},"price":"98","date":"3/24","day":"Fri","departure":"7:40 pm","arrival":"9:40 pm","duration":"2h 00m","company":"Air Europa"}
+{"_id":{"$oid":"63f94c4453f4a4115483327f"},"price":"97","date":"3/25","day":"Sat","departure":"5:50 pm","arrival":"7:55 pm","duration":"2h 05m","company":"Transavia France"}
+{"_id":{"$oid":"63f94c4653f4a41154833280"},"price":"98","date":"3/24","day":"Fri","departure":"5:05 pm","arrival":"7:05 pm","duration":"2h 00m","company":"Air Europa"}
+{"_id":{"$oid":"63f94c4853f4a41154833281"},"price":"99","date":"3/23","day":"Thu","departure":"5:05 pm","arrival":"7:05 pm","duration":"2h 00m","company":"Air Europa"}
+{"_id":{"$oid":"63f94c4a53f4a41154833282"},"price":"86","date":"3/21","day":"Tue","departure":"6:20 am","arrival":"8:25 am","duration":"2h 05m","company":"Transavia France"}

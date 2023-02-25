@@ -1,0 +1,32 @@
+{"_id":{"$oid":"63f94d8153f4a411548332ce"},"price":"110","date":"3/22","day":"Wed","departure":"10:30 am","arrival":"3:20 pm","duration":"4h 50m","company":"Scandinavian Airlines"}
+{"_id":{"$oid":"63f94d8353f4a411548332cf"},"price":"61","date":"3/24","day":"Fri","departure":"3:40 pm","arrival":"8:30 pm","duration":"4h 50m","company":"Wizz Air, Ryanair"}
+{"_id":{"$oid":"63f94d8553f4a411548332d0"},"price":"40","date":"3/21","day":"Tue","departure":"6:05 pm","arrival":"5:50 pm+1","duration":"23h 45m","company":"Ryanair"}
+{"_id":{"$oid":"63f94d8753f4a411548332d1"},"price":"106","date":"3/23","day":"Thu","departure":"2:00 pm","arrival":"4:15 pm","duration":"2h 15m","company":"Scandinavian Airlines"}
+{"_id":{"$oid":"63f94d8953f4a411548332d2"},"price":"66","date":"3/24","day":"Fri","departure":"8:55 am","arrival":"3:15 pm","duration":"6h 20m","company":"Ryanair"}
+{"_id":{"$oid":"63f94d8b53f4a411548332d3"},"price":"97","date":"3/23","day":"Thu","departure":"11:45 am","arrival":"2:05 pm","duration":"2h 20m","company":"Norwegian"}
+{"_id":{"$oid":"63f94d8c53f4a411548332d4"},"price":"109","date":"3/22","day":"Wed","departure":"2:00 pm","arrival":"4:15 pm","duration":"2h 15m","company":"Scandinavian Airlines"}
+{"_id":{"$oid":"63f94d8e53f4a411548332d5"},"price":"97","date":"3/24","day":"Fri","departure":"11:45 am","arrival":"2:05 pm","duration":"2h 20m","company":"Norwegian"}
+{"_id":{"$oid":"63f94d9053f4a411548332d6"},"price":"94","date":"3/23","day":"Thu","departure":"2:05 pm","arrival":"6:35 pm","duration":"4h 30m","company":"Norwegian"}
+{"_id":{"$oid":"63f94d9253f4a411548332d7"},"price":"93","date":"3/22","day":"Wed","departure":"10:30 am","arrival":"3:20 pm","duration":"4h 50m","company":"Scandinavian Airlines"}
+{"_id":{"$oid":"63f94d9453f4a411548332d8"},"price":"141","date":"3/24","day":"Fri","departure":"2:00 pm","arrival":"4:15 pm","duration":"2h 15m","company":"Scandinavian Airlines"}
+{"_id":{"$oid":"63f94d9553f4a411548332d9"},"price":"94","date":"3/23","day":"Thu","departure":"2:05 pm","arrival":"7:30 pm","duration":"5h 25m","company":"Norwegian"}
+{"_id":{"$oid":"63f94d9753f4a411548332da"},"price":"149","date":"3/21","day":"Tue","departure":"2:00 pm","arrival":"4:15 pm","duration":"2h 15m","company":"Scandinavian Airlines"}
+{"_id":{"$oid":"63f94d9953f4a411548332db"},"price":"167","date":"3/25","day":"Sat","departure":"8:50 pm","arrival":"11:15 pm","duration":"2h 25m","company":"Air France"}
+{"_id":{"$oid":"63f94d9b53f4a411548332dc"},"price":"94","date":"3/20","day":"Mon","departure":"3:40 pm","arrival":"9:35 pm","duration":"5h 55m","company":"Wizz Air, Ryanair"}
+{"_id":{"$oid":"63f94d9d53f4a411548332dd"},"price":"119","date":"3/23","day":"Thu","departure":"6:10 am","arrival":"10:40 am","duration":"4h 30m","company":"Lufthansa"}
+{"_id":{"$oid":"63f94d9f53f4a411548332de"},"price":"167","date":"3/24","day":"Fri","departure":"2:25 pm","arrival":"4:45 pm","duration":"2h 20m","company":"Air France"}
+{"_id":{"$oid":"63f94da153f4a411548332df"},"price":"140","date":"3/22","day":"Wed","departure":"7:50 pm","arrival":"12:05 am+1","duration":"4h 15m","company":"Scandinavian Airlines"}
+{"_id":{"$oid":"63f94da253f4a411548332e0"},"price":"110","date":"3/22","day":"Wed","departure":"6:35 pm","arrival":"12:05 am+1","duration":"5h 30m","company":"Vueling, Norwegian"}
+{"_id":{"$oid":"63f94da453f4a411548332e1"},"price":"184","date":"3/20","day":"Mon","departure":"12:45 pm","arrival":"3:05 pm","duration":"2h 20m","company":"Norwegian"}
+{"_id":{"$oid":"63f94da653f4a411548332e2"},"price":"178","date":"3/23","day":"Thu","departure":"8:50 pm","arrival":"11:15 pm","duration":"2h 25m","company":"Air France"}
+{"_id":{"$oid":"63f94da853f4a411548332e3"},"price":"200","date":"3/20","day":"Mon","departure":"2:00 pm","arrival":"4:15 pm","duration":"2h 15m","company":"Scandinavian Airlines"}
+{"_id":{"$oid":"63f94daa53f4a411548332e4"},"price":"119","date":"3/22","day":"Wed","departure":"6:10 am","arrival":"10:40 am","duration":"4h 30m","company":"Lufthansa"}
+{"_id":{"$oid":"63f94dac53f4a411548332e5"},"price":"114","date":"3/25","day":"Sat","departure":"3:30 pm","arrival":"8:50 pm","duration":"5h 20m","company":"Vueling, Norwegian"}
+{"_id":{"$oid":"63f94dad53f4a411548332e6"},"price":"117","date":"3/22","day":"Wed","departure":"7:20 am","arrival":"12:25 pm","duration":"5h 05m","company":"easyJet, Norwegian"}
+{"_id":{"$oid":"63f94daf53f4a411548332e7"},"price":"138","date":"3/25","day":"Sat","departure":"6:15 pm","arrival":"10:20 pm","duration":"4h 05m","company":"KLM"}
+{"_id":{"$oid":"63f94db153f4a411548332e8"},"price":"197","date":"3/21","day":"Tue","departure":"8:50 pm","arrival":"11:15 pm","duration":"2h 25m","company":"Air France"}
+{"_id":{"$oid":"63f94db353f4a411548332e9"},"price":"116","date":"3/23","day":"Thu","departure":"7:20 am","arrival":"12:25 pm","duration":"5h 05m","company":"easyJet, Norwegian"}
+{"_id":{"$oid":"63f94db553f4a411548332ea"},"price":"138","date":"3/24","day":"Fri","departure":"6:15 pm","arrival":"10:20 pm","duration":"4h 05m","company":"KLM"}
+{"_id":{"$oid":"63f94db753f4a411548332eb"},"price":"197","date":"3/25","day":"Sat","departure":"2:25 pm","arrival":"4:45 pm","duration":"2h 20m","company":"Air France"}
+{"_id":{"$oid":"63f94db953f4a411548332ec"},"price":"138","date":"3/22","day":"Wed","departure":"6:15 pm","arrival":"10:20 pm","duration":"4h 05m","company":"KLM"}
+{"_id":{"$oid":"63f94dba53f4a411548332ed"},"price":"135","date":"3/21","day":"Tue","departure":"6:10 am","arrival":"10:40 am","duration":"4h 30m","company":"Lufthansa"}

@@ -54,3 +54,4 @@ WTForms
 zope.interface
 selenium
 pyyaml
+plotly.express
