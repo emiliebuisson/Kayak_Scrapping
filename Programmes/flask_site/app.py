@@ -33,14 +33,23 @@ def gfg():
 
 @app.route('/destinations', methods=["GET", "POST"])
 def destinations():
-    villes = ["", "Tunis", "Montreal", "Bangkok", "New York", "Marrakech", "Venice", "Madrid", "Berlin", "London", "Oslo"]
+    villes = ["", "tunis", "montreal", "bangkok", "newyork", "marrakech", "venice", "madrid", "berlin", "london", "oslo"]
+    documents = []
     if request.method == "POST":
         ville = request.form.get("ville")
-        if ville:
-            return redirect(url_for("ville", ville=ville))
-    return render_template("destinations.html", villes=villes)
+        if ville: 
+            documents = get_documents(ville)
+            return redirect(url_for("ville", ville=ville, documents=documents))
+    return render_template("destinations.html", villes=villes, documents=documents)
 
-
+# @app.route('/destinations', methods=["GET", "POST"])
+# def destinations():
+#     villes = ["", "tunis", "montreal", "bangkok", "newyork", "marrakech", "venice", "madrid", "berlin", "london", "oslo"]
+#     if request.method == "POST":
+#         ville = request.form.get("ville")
+#         if ville:
+#             return redirect(url_for("ville", ville=ville))
+#     return render_template("destinations.html", villes=villes)
 
 @app.route('/destinations/<ville>')
 def ville(ville):
@@ -49,7 +58,7 @@ def ville(ville):
 
 @app.route('/statistiques', methods=["GET", "POST"])
 def statistiques():
-    villes = ["", "Tunis", "Montreal", "Bangkok", "New York", "Marrakech", "Venice", "Madrid", "Berlin", "London", "Oslo"]
+    villes = ["", "tunis", "montreal", "bangkok", "newyork", "marrakech", "venice", "madrid", "berlin", "london", "oslo"]
     if request.method == "POST":
         ville = request.form.get("ville")
         if ville:

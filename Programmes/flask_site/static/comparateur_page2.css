@@ -73,26 +73,43 @@ body {
 
   /* Correspond à la box prix */
 .box {
-    border: 1px solid #ccc;
+    border: 1px solid #e9e5e5;
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
   }
   
-  .price-box {
-    background-color: #f5f5f5;
+  .departure, .arrival, .duration, .company {
     padding: 10px;
     border-radius: 5px;
     text-align: center;
   }
   
+  .price-box, .destination-info {
+	background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
   .price-box h2 {
-    margin-top: 0;
+    margin-top: 10px;
+	margin-bottom: 0;
     text-align: center;
   }
   
+  .departure p, .arrival p, .duration p, .company p {
+    font-size: 20px;
+    margin: 0;
+  }
+  
   .price-box p {
-    font-size: 24px;
+	font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .destination-info h3{
+	font-size: 20px;
     font-weight: bold;
     margin: 0;
   }
@@ -113,4 +130,5 @@ body {
 	margin-bottom: 30px;
 	border-radius: 50px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+	justify-content: space-between;
 }
