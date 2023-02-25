@@ -21,11 +21,11 @@ def gfg():
     if request.method == "POST":
         # getting input with name = fname in HTML form
         prix = request.form.get("prix")
-        if prix:
+        if float(prix)>26:
             flights, collections_done = find_cheaper_flights(float(prix))
             return render_template("comparateur_page2.html", prix=prix, flights = flights, collections_done = collections_done)
         else:
-            return render_template("comparateur.html", error="Veuillez remplir le formulaire")
+            return render_template("comparateur.html", error="Veuillez mettre un montant plus important")
        
     return render_template("comparateur.html")
 
@@ -35,12 +35,15 @@ def gfg():
 def destinations():
     villes = ["", "tunis", "montreal", "bangkok", "newyork", "marrakech", "venice", "madrid", "berlin", "london", "oslo"]
     documents = []
+    final = []
+    name_city = []
     if request.method == "POST":
         ville = request.form.get("ville")
         if ville: 
             documents = get_documents(ville)
+            final, name_city = get_random_documents()
             return redirect(url_for("ville", ville=ville, documents=documents))
-    return render_template("destinations.html", villes=villes, documents=documents)
+    return render_template("destinations.html", villes=villes, documents=documents, final = final, name_city = name_city)
 
 # @app.route('/destinations', methods=["GET", "POST"])
 # def destinations():
@@ -53,7 +56,8 @@ def destinations():
 
 @app.route('/destinations/<ville>')
 def ville(ville):
-    return render_template("ville.html", ville=ville)
+    documents = get_documents(ville)
+    return render_template("ville.html", ville=ville, documents=documents)
 
 
 @app.route('/statistiques', methods=["GET", "POST"])
@@ -62,7 +66,11 @@ def statistiques():
     if request.method == "POST":
         ville = request.form.get("ville")
         if ville:
-            return redirect(url_for("statville", ville=ville))
+            days, prices, price_stats, companies_data, companies = get_stats(ville)
+            graphJSON1 = plot_prices(days, prices)
+            graphJSON2 = plot_company_prices(companies_data)
+            graphJSON3 = pie_chart(companies)
+            return redirect(url_for("statville", ville=ville, graphJSON1 = graphJSON1, graphJSON2 = graphJSON2, graphJSON3 = graphJSON3))
     return render_template("statistiques.html", villes=villes)
 
 @app.route('/statistiques/<ville>')

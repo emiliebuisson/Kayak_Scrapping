@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title>Adventure Travel - Destinations</title>
@@ -28,7 +28,7 @@
                 </div>
                 <div class="price-box">
                     <p>Prix :</p>
-                    <h4>100$</h4>
+                    <h4>{{documents[0]['price']}}$</h4>
                 </div>
             </div>
             <div class="destination">
@@ -52,9 +52,65 @@
                 </div>
             </div>
             <!-- Ajout de blocs si besoin -->
+        <!-- </div>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adventure Travel - Destinations</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='comparateur_page2.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='../static/logo.png') }}" alt="Adventure Travel">
+        <nav>
+          <ul>
+            <li><a href="/"><h1>Adventure Travel</h1></a></li>
+			<li><a href="/comparateur">Comparateur de prix</a></li>
+			<li><a href="/destinations">Destinations</a></li>
+			<li><a href="/statistiques">Statistiques</a></li>
+          </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="destinations">
+            <div class="header">
+                <h1>Vols que nous vous proposons pour {{ville}}</h1>
+            </div>
+            {% for document in documents %}
+            <div class="destination">
+                <div class="destination-info">
+					<h3>{{ville}}</h3>
+				</div>
+				<div class="departure">
+					<p>Date de départ :</p>
+					<h4>{{document['departure']}}</h4>
+				</div>
+				<div class="arrival">
+					<p>Date d'arrivée :</p>
+					<h4>{{document['arrival']}}</h4>
+				</div>
+				<div class="company">
+					<p>Compagnie :</p>
+					<h4>{{document['company']}}</h4>
+				</div>
+				<div class="duration">
+					<p>Temps du trajet :</p>
+					<h4>{{document['duration']}}</h4>
+				</div>
+				<div class="price-box">
+					<p>Prix :</p>
+					<h4>{{document['price']}}$</h4>
+				</div>
+            </div>
+            {% endfor %}
         </div>
     </div>
 </body>
 </html>
+
 
 

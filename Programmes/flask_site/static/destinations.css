@@ -4,6 +4,10 @@ body {
 	font-family: Arial, sans-serif;
     background-image: url('/static/fond.jpg');
 	background-repeat: repeat;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	
 }
 
   /* Correspond à la banière*/
@@ -55,6 +59,13 @@ header {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 30px;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+    overflow-y: auto;
 }
 
   /* Correspond au texte principal */
@@ -64,7 +75,7 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 0px;
 }
 
 .header h1 {
@@ -77,12 +88,12 @@ header {
   .destinations form {
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
+	align-items: center;
 	border: 1px solid black;
 	padding: 20px;
 	border-radius: 25px;
-	margin-top: 50px;
-	margin-left: 50px;
+	/* margin-top: 50px;
+	margin-left: 50px; */
   }
   
   .destinations label {
@@ -112,40 +123,8 @@ header {
 	background-color: #495057;
   }
    
-  /* Correspond au price box de destination */  
-.price-box {
-  background-color: #f5f5f5;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-}
-  
-.price-box h2 {
-  margin-top: 0;
-  text-align: center;
-}
-  
-.price-box p {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
-}
- 
   /* Correspond à la div destinations */
 .destinations {
 	display: flex;
 	flex-wrap: wrap;
-}
-
-  /* Correspond à la div destination */
-.destination {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	background-color: #fff;
-	padding: 30px;
-	margin-bottom: 30px;
-	border-radius: 50px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }

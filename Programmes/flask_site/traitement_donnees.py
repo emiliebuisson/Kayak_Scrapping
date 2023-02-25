@@ -6,6 +6,8 @@ import collections
 from collections import Counter
 import os
 import random
+import json
+import plotly
 
 
 
@@ -71,6 +73,8 @@ def plot_prices(days, prices):
     fig = px.bar(x=[x[0] for x in avg_prices], y=[x[1] for x in avg_prices], 
                  labels={"x": "Jours de la semaine", "y": "Prix moyens"}, 
                  title="Prix des billets en fonction des jours de la semaine")
+    graphJSON1 = json.dumps(fig, cls = plotly.utils.PlotlyJSONEncoder)
+    return(graphJSON1)
 
 
 
@@ -86,6 +90,8 @@ def plot_company_prices(companies_data):
                        'Prix moyen': prices})
     fig2 = px.bar(df, x='Compagnies aériennes', y=['Durée moyenne', 'Prix moyen'], 
                  barmode='group', title='Statistiques par compagnie aérienne')
+    graphJSON2 = json.dumps(fig2, cls = plotly.utils.PlotlyJSONEncoder)
+    return(graphJSON2)
 
     
 
@@ -98,56 +104,58 @@ def pie_chart(companies):
 
     # Création du graphique
     data = {"labels": list(counter.keys()), "values": market_share_percentage}
-    fig = px.pie(data_frame=data, values="values", names="labels")
-    fig.update_traces(textposition="inside", textinfo="percent+label")
-    fig.update_layout(title="Part de marché des compagnies aériennes")
+    fig3 = px.pie(data_frame=data, values="values", names="labels")
+    fig3.update_traces(textposition="inside", textinfo="percent+label")
+    fig3.update_layout(title="Part de marché des compagnies aériennes")
+    graphJSON3 = json.dumps(fig3, cls = plotly.utils.PlotlyJSONEncoder)
+    return(graphJSON3)
 
     
 
-# fonction pour afficher les deux graphiques
-def show_stats(collection_name):
-    # récupération des données
-    days, prices, price_stats, companies_data, companies = get_stats(collection_name)
+# # fonction pour afficher les deux graphiques
+# def show_stats(collection_name):
+#     # récupération des données
+#     days, prices, price_stats, companies_data, companies = get_stats(collection_name)
 
-    fig1 =plot_prices(days, prices)
-    fig2 = plot_company_prices(companies_data)
-    fig3 =pie_chart(companies)
+#     fig1 =plot_prices(days, prices)
+#     fig2 = plot_company_prices(companies_data)
+#     fig3 =pie_chart(companies)
 
-    # affichage des graphiques
-    return fig1, fig2, fig3 
+#     # affichage des graphiques
+#     return fig1, fig2, fig3 
 
 
+
+
+
+
+# def find_flights_by_price(max_price):
+#     # création de l'instance du client MongoClient + spécification de l'adresse IP / port du serveur de la BDD
+#     client = MongoClient('mongodb://mongo')
+#     # Accès à la BDD en spécifiant nom + infos d'identification si besoin
+#     db = client['Kayak']
+
+#     # connexion à la base de données et récupération de toutes les collections de vols
+#     flights_collections = db.list_collection_names()
+
+#     # liste pour stocker tous les vols qui coûtent moins cher que max_price
+#     flights = []
+
+#     # boucle sur toutes les collections de vols
+#     for collection_name in flights_collections:
+#         collection = db[collection_name]
+#         # récupération de tous les vols qui coûtent moins cher que max_price
+#         result = collection.find({"price": {"$lt": max_price}})
+#         # ajout des vols à la liste
+#         for doc in result:
+#             flights.append(doc)
+
+#     return flights
 
 
 
 
 # fonction pour le comparateur de prix
-def find_flights_by_price(max_price):
-    # création de l'instance du client MongoClient + spécification de l'adresse IP / port du serveur de la BDD
-    client = MongoClient('mongodb://mongo')
-    # Accès à la BDD en spécifiant nom + infos d'identification si besoin
-    db = client['Kayak']
-
-    # connexion à la base de données et récupération de toutes les collections de vols
-    flights_collections = db.list_collection_names()
-
-    # liste pour stocker tous les vols qui coûtent moins cher que max_price
-    flights = []
-
-    # boucle sur toutes les collections de vols
-    for collection_name in flights_collections:
-        collection = db[collection_name]
-        # récupération de tous les vols qui coûtent moins cher que max_price
-        result = collection.find({"price": {"$lt": max_price}})
-        # ajout des vols à la liste
-        for doc in result:
-            flights.append(doc)
-
-    return flights
-
-
-
-
 
 def find_cheaper_flights(max_price):
     client = pymongo.MongoClient("mongodb://mongo")
@@ -207,10 +215,25 @@ def find_cheaper_flights(max_price):
 #     return flights, collections_done
 
 
+def get_random_documents():
+    client = pymongo.MongoClient("mongodb://mongo")
+    db = client["Kayak"]
+    collection_names = db.list_collection_names()
+    documents = []
+    name_city = []
+    for collection_name in collection_names:
+        collection = db[collection_name]
+        random_documents = collection.aggregate([{ "$sample": { "size": 2 } }])
+        documents.extend(random_documents)
+        name_city.append(collection_name)
+    random.shuffle(documents)
+    final = documents[:20]
+    return final, name_city
+
 
 def get_documents(collection_name):
     client = pymongo.MongoClient("mongodb://mongo")
     db = client["Kayak"]
     collection = db[collection_name]
-    documents = list(collection.find().limit(10))
+    documents = list(collection.find().limit(15))
     return documents
