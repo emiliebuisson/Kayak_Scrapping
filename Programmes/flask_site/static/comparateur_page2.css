@@ -56,6 +56,46 @@ body {
 	padding: 30px;
 }
 
+  /* Correspond au menu déroulant */
+  .destinations form {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border: 1px solid black;
+	padding: 20px;
+	border-radius: 25px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+  }
+  
+  .destinations label {
+	font-size: 20px;
+	margin-right: 20px;
+  }
+  
+  .destinations select {
+	font-size: 20px;
+	padding: 5px;
+	border: none;
+	outline: none;
+  }
+  
+  .destinations button {
+	font-size: 20px;
+	margin-left: 20px;
+	padding: 10px 20px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  .destinations button:hover {
+	background-color: #495057;
+  }
+
+
   /* Correspond au texte principal*/
 .header {
 	display: flex;

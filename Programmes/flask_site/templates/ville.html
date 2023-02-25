@@ -77,6 +77,16 @@
     </header>
     <div class="container">
         <div class="destinations">
+            <form method="POST">
+				<label for="ville">Choisissez une ville d'arrivée :</label>
+				<select id="ville" name="ville">
+				  {% for other_ville in villes %}
+					<option value="{{ other_ville }}">{{ other_ville }}</option>
+				  {% endfor %}
+				</select>
+				<br><br>
+				<button type="submit">Valider</button>
+			</form>
             <div class="header">
                 <h1>Vols que nous vous proposons pour {{ville}}</h1>
             </div>

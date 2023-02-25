@@ -73,9 +73,9 @@
 </body>
 <script src ='https://cdn.plot.ly/plotly-latest.min.js'></script>
 <script type='text/javascript'>
-  var graph1 = {{graphJSON1 | safe}};
-  var graph2 = {{graphJSON2 | safe}};
-  var graph3 = {{graphJSON3 | safe}};
+  var graphJSON1 = {{graphJSON1 | safe}};
+  var graphJSON2 = {{graphJSON2 | safe}};
+  var graphJSON3 = {{graphJSON3 | safe}};
   Plotly.plot('graph1', graphJSON1, {});
   Plotly.plot('graph2', graphJSON2, {});
   Plotly.plot('graph3', graphJSON3, {});
