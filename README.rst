@@ -39,15 +39,18 @@ MongoDB
 
 Comme dit précédemment, pour assurer et éviter les nouveaux problèmes de MAJ, nous avons préféré stocker nos données dans des fichiers JSON.
 Pour ce faire, nous utilisons le terminal MongoDB dans docker à l'aide de la commande suivante ::
-  '> docker exec -it mongo bash'
+
+  > docker exec -it mongo bash
 
 
 Une fois dans le terminal MongoDB, nous exportons chaque collection sous un fichier .json à l'aide de la commande ::
-  '> mongoexport --db Kayak --collection <nom de la collection> --out <nom du fichier à créer>.json'
-  '> exit'
+
+  > mongoexport --db Kayak --collection <nom de la collection> --out <nom du fichier à créer>.json
+  > exit
 
 Nous avons donc à ce stade les 10 fichiers .json correspondant aux 10 collections des destinations. Nous les copions vers la machine locale de la manière suivante ::
-  '> docker cp mongo:<chemin du fichier> <chemin local>''
+
+  > docker cp mongo:<chemin du fichier> <chemin local>
 
 Nous pouvons donc maintenant récupérer les données des fichiers JSON et les importer dans MongoDB si besoin, c'est ce que nous allons faire dans le script 'data.py'.
 Une fois cette étape réalisée, un script python 'traitement_donnees' se trouvant dans le même répertoire que app.py (flask_site) récupère cette base de données présente dans Mongo et va traiter les données
@@ -60,9 +63,11 @@ Comment lancer l'app
 
 Après avoir lancé Docker desktop, il faudra ouvrir un terminal et se placer dans le chemin du dossier.
 Il faudra ensuite exécuter la commande suivante ::
-  '> docker-compose up -d'
+
+  > docker-compose up -d
 
 Nous ouvrons ensuite le terminal python de notre conteneur dans Docker puis nous nous plaçons dans le chemin 'Programmes/flask_site' avant de lancer ::
-  '> python app.py'
+    
+  > python app.py
 
 Nous pouvons alors accéder à l'application en suivant la première adresse proposée '127.0.0.5066'.
