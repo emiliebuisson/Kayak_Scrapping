@@ -1,59 +1,54 @@
- /* Correspond au corps de la page */
+/* Correspond au corps de la page */
 body {
-	background-color: #f4f4f4;
-	font-family: Arial, sans-serif;
-    background-image: url('/static/fond.jpg');
-	background-repeat: repeat;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  background-image: url('/static/fond.jpg');
+  background-repeat: repeat;
+  margin: auto;
 }
 
-  /* Correspond à la banière*/
+/* Correspond à la banière*/
 header {
 	display: flex;
-	/* justify-content: space-between; */
 	align-items: center;
 	padding: 1rem;
 	background-color: #fff;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 	width: 100%;
-	}
+  }
   
-	header img {
-		width: 80px;
-		margin-right: 1rem;
-	}
-	
-	header h1 {
-		margin: 0;
-		font-size: 1.5rem;
-		font-weight: bold;
-	}
-	
-	nav ul {
-		display: flex;
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
-	
-	nav li {
-		margin: 0 1rem;
-	}
-	
-	nav a {
-		text-decoration: none;
-		color: #333;
-		font-size: 1.2rem;
-		transition: color 0.2s ease;
-	}
-	
-	nav a:hover {
-		color: #666;
-	}
-
+  header img {
+	width: 80px;
+	margin-right: 1rem;
+  }
+  
+  header h1 {
+	margin: 0;
+	font-size: 1.5rem;
+	font-weight: bold;
+  }
+  
+  nav ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  nav li {
+	margin: 0 1rem;
+  }
+  
+  nav a {
+	text-decoration: none;
+	color: #333;
+	font-size: 1.2rem;
+	transition: color 0.2s ease;
+  }
+  
+  nav a:hover {
+	color: #666;
+  }
   /* Correspond au conteneur principal */
 .container {
 	max-width: 1200px;

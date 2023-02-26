@@ -1,7 +1,7 @@
-  /* Correspond au corps de la page */
+/* Correspond au corps de la page */
 body {
+  background-color: #f4f4f4;
   font-family: Arial, sans-serif;
-  font-size: 16px;
   background-image: url('/static/fond.jpg');
   background-repeat: repeat;
   display: flex;
@@ -9,59 +9,56 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  }
-  
-  /* Correspond à la banière*/
-  header {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    /* position: fixed;
-    top: 0; */
-    }
-    
-    header img {
-    width: 80px;
-    margin-right: 1rem;
-    }
-    
-    header h1 {
-    margin: 0;
-    font-size: 1.5rem;
-    font-weight: bold;
-    }
-    
-    nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    }
-    
-    nav li {
-    margin: 0 1rem;
-    }
-    
-    nav a {
-    text-decoration: none;
-    color: #333;
-    font-size: 1.2rem;
-    transition: color 0.2s ease;
-    }
-    
-    nav a:hover {
-    color: #666;
-    }
-  
+  margin: auto;
+}
+
+/* Correspond à la banière*/
+header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+header img {
+  width: 80px;
+  margin-right: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #666;
+}
   /* Correspond au conteneur principal */
   .container {
     max-width: 950px;
-    width: 100%; 
-    /* margin: 100px; */
-    padding: 20px;
+    margin: auto;
+    padding: 30px;
     background-color: #f7f7f7;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -70,9 +67,11 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     overflow-y: auto;
   }
+  
   
   /* Correspond au titre principal */
   h1 {

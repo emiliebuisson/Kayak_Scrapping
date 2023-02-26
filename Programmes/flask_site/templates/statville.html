@@ -1,41 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-    <title>Adventure Travel - Statistiques</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='statville.css') }}">
-</head>
-<body>
-    <header>
-        <img src="{{ url_for('static', filename='../static/logo.png') }}" alt="Adventure Travel">
-        <nav>
-          <ul>
-            <li><a href="/"><h1>Adventure Travel</h1></a></li>
-			<li><a href="/comparateur">Comparateur de prix</a></li>
-			<li><a href="/destinations">Destinations</a></li>
-			<li><a href="/statistiques">Statistiques</a></li>
-          </ul>
-        </nav>
-    </header>
-    <div class="container">
-        <div class="destinations">
-
-            <div class="header">
-                <h1>Statistiques de Paris - {{ville}}</h1>
-            </div>
-
-        </div>
-    </div>
-</body>
-<script src ='https://cdn.plot.ly/plotly-latest.min.js'></script>
-<script type='text/javascript'>
-  var graphs = {{graphJSON1 | safe}};
-  var graphs2 = {{graphJSON2 | safe}};
-  Plotly.plot('chart1', graphs, {});
-  Plotly.plot('chart2', graphs, {});
-</script>
-</html> -->
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -67,7 +29,7 @@
 				<button type="submit">Valider</button>
 			</form>
             <div class="header">
-                <h1>Statistiques de Paris - {{ville}}</h1>
+                <h1>Statistiques des vols de Paris - {{ville}}</h1>
             </div>
             <div class='graph'>
                 <div id="graph1"></div>
