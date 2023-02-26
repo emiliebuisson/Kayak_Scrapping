@@ -155,32 +155,70 @@ def pie_chart(companies):
 
 # fonction pour le comparateur de prix
 
+# def find_cheaper_flights(max_price):
+#     client = pymongo.MongoClient("mongodb://mongo")
+#     db = client["Kayak"]
+#     # liste pour stocker tous les vols qui coûtent moins cher que max_price
+#     flights = []
+#     # liste pour stocker les noms des collections déjà traitées
+#     collections_done = []
+
+#     # boucle jusqu'à ce qu'on ait récupéré un vol dans 3 collections différentes
+#     while len(flights) < 3:
+#         # choix aléatoire d'une collection parmi celles qui n'ont pas encore été traitées
+#         remaining_collections = [col for col in db.list_collection_names() if col not in collections_done]
+#         if not remaining_collections:
+#             # si toutes les collections ont été traitées sans trouver de vol correspondant, on arrête la boucle
+#             break
+#         collection_name = random.choice(remaining_collections)
+#         collection = db[collection_name]
+#         # récupération d'un vol qui coûte moins cher que max_price dans cette collection
+#         result = collection.find_one({"price": {"$lt": max_price}})
+#         if result:
+#             # si un vol a été trouvé, on l'ajoute à la liste des vols trouvés
+#             flights.append(result)
+#             # on ajoute la collection traitée à la liste des collections déjà traitées
+#             collections_done.append(collection_name)
+
+#     return flights, collections_done
+
+
 def find_cheaper_flights(max_price):
     client = pymongo.MongoClient("mongodb://mongo")
     db = client["Kayak"]
-    # liste pour stocker tous les vols qui coûtent moins cher que max_price
+    collections = db.list_collection_names()
     flights = []
-    # liste pour stocker les noms des collections déjà traitées
     collections_done = []
-
-    # boucle jusqu'à ce qu'on ait récupéré un vol dans 3 collections différentes
-    while len(flights) < 3:
-        # choix aléatoire d'une collection parmi celles qui n'ont pas encore été traitées
-        remaining_collections = [col for col in db.list_collection_names() if col not in collections_done]
-        if not remaining_collections:
-            # si toutes les collections ont été traitées sans trouver de vol correspondant, on arrête la boucle
-            break
-        collection_name = random.choice(remaining_collections)
+    for collection_name in collections:
         collection = db[collection_name]
-        # récupération d'un vol qui coûte moins cher que max_price dans cette collection
-        result = collection.find_one({"price": {"$lt": max_price}})
-        if result:
-            # si un vol a été trouvé, on l'ajoute à la liste des vols trouvés
-            flights.append(result)
-            # on ajoute la collection traitée à la liste des collections déjà traitées
+        result = collection.find({"price": {"$lte": max_price}}).sort("price", pymongo.DESCENDING).limit(1)
+        for doc in result:
+            flights.append(doc)
             collections_done.append(collection_name)
-
+            break
     return flights, collections_done
+
+
+# def find_cheaper_flights(max_price):
+#     client = pymongo.MongoClient("mongodb://mongo")
+#     db = client["Kayak"]
+#     collections = db.list_collection_names()
+#     flights = []
+#     collections_done = []
+#     index = 0
+#     for collection_name in collections:
+#         if collection_name in collections_done:
+#             continue
+#         collection = db[collection_name]
+#         result = collection.find({"price": {"$lte": max_price}}).sort("price", pymongo.DESCENDING).limit(1)
+#         for doc in result:
+#             flights.append(doc)
+#             collections_done.append(collection_name)
+#             index += 1
+#             break
+#     return flights, collections_done, list(range(index))
+
+
 
 
 
@@ -213,20 +251,20 @@ def find_cheaper_flights(max_price):
 #     return flights, collections_done
 
 
-def get_random_documents():
-    client = pymongo.MongoClient("mongodb://mongo")
-    db = client["Kayak"]
-    collection_names = db.list_collection_names()
-    documents = []
-    name_city = []
-    for collection_name in collection_names:
-        collection = db[collection_name]
-        random_documents = collection.aggregate([{ "$sample": { "size": 2 } }])
-        documents.extend(random_documents)
-        name_city.append(collection_name)
-    random.shuffle(documents)
-    final = documents[:20]
-    return final, name_city
+# def get_random_documents():
+#     client = pymongo.MongoClient("mongodb://mongo")
+#     db = client["Kayak"]
+#     collection_names = db.list_collection_names()
+#     documents = []
+#     name_city = []
+#     for collection_name in collection_names:
+#         collection = db[collection_name]
+#         random_documents = collection.aggregate([{ "$sample": { "size": 2 } }])
+#         documents.extend(random_documents)
+#         name_city.append(collection_name)
+#     random.shuffle(documents)
+#     final = documents[:20]
+#     return final, name_city
 
 
 def get_documents(collection_name):

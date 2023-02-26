@@ -28,81 +28,38 @@
 		</div>
 
 		<div class="destinations">
+
+			{% for index, flight in enum %}
 			<div class="destination">
 				<div class="destination-info">
-					<h3>{{collections_done[0]}}</h3>
-				</div>
-				<div class="departure">
-					<p>Date de départ :</p>
-					<h4>{{flights[0]['departure']}}</h4>
+					<h3>{{collections_done[index]}}</h3>
 				</div>
 				<div class="arrival">
-					<p>Date d'arrivée :</p>
-					<h4>{{flights[0]['arrival']}}</h4>
+					<p>Date :</p>
+					<h4>{{flight['date']}}</h4>
+				</div>
+				<div class="departure">
+					<p>Heure de départ :</p>
+					<h4>{{flight['departure']}}</h4>
+				</div>
+				<div class="arrival">
+					<p>Heure d'arrivée :</p>
+					<h4>{{flight['arrival']}}</h4>
 				</div>
 				<div class="company">
 					<p>Compagnie :</p>
-					<h4>{{flights[0]['company']}}</h4>
+					<h4>{{flight['company']}}</h4>
 				</div>
 				<div class="duration">
 					<p>Temps du trajet :</p>
-					<h4>{{flights[0]['duration']}}</h4>
+					<h4>{{flight['duration']}}</h4>
 				</div>
 				<div class="price-box">
 					<p>Prix :</p>
-					<h4>{{flights[0]['price']}}$</h4>
+					<h4>{{flight['price']}}$</h4>
 				</div>
-			</div>
-			<div class="destination">
-				<div class="destination-info">
-					<h3>{{collections_done[1]}}</h3>
-				</div>
-				<div class="departure">
-					<p>Date de départ :</p>
-					<h4>{{flights[1]['departure']}}</h4>
-				</div>
-				<div class="arrival">
-					<p>Date d'arrivée :</p>
-					<h4>{{flights[1]['arrival']}}</h4>
-				</div>
-				<div class="company">
-					<p>Compagnie :</p>
-					<h4>{{flights[1]['company']}}</h4>
-				</div>
-				<div class="duration">
-					<p>Temps du trajet :</p>
-					<h4>{{flights[1]['duration']}}</h4>
-				</div>
-				<div class="price-box">
-					<p>Prix :</p>
-					<h4>{{flights[1]['price']}}$</h4>
-				</div>
-			</div>
-			<div class="destination">
-				<div class="destination-info">
-					<h3>{{collections_done[2]}}</h3>
-				</div>
-				<div class="departure">
-					<p>Date de départ :</p>
-					<h4>{{flights[2]['departure']}}</h4>
-				</div>
-				<div class="arrival">
-					<p>Date d'arrivée :</p>
-					<h4>{{flights[2]['arrival']}}</h4>
-				</div>
-				<div class="company">
-					<p>Compagnie :</p>
-					<h4>{{flights[2]['company']}}</h4>
-				</div>
-				<div class="duration">
-					<p>Temps du trajet :</p>
-					<h4>{{flights[2]['duration']}}</h4>
-				</div>
-				<div class="price-box">
-					<p>Prix :</p>
-					<h4>{{flights[2]['price']}}$</h4>
-				</div>
-			</div>
+            </div>
+            {% endfor %}
 		</div>
 		</div>
 </body>

@@ -15,47 +15,19 @@ def accueil():
 
 @app.route('/comparateur', methods =["GET", "POST"])
 def gfg():
+    index = -1 # initialisation de l'indice
     if request.method == "POST":
         # getting input with name = fname in HTML form
         prix = request.form.get("prix")
-        if float(prix)>26:
+        if float(prix)>8:
             flights, collections_done = find_cheaper_flights(float(prix))
-            return render_template("comparateur_page2.html", prix=prix, flights = flights, collections_done = collections_done)
+            enum = enumerate(flights)
+            return render_template("comparateur_page2.html", prix=prix, flights = flights, collections_done = collections_done, index = index, enum = enum)
         else:
             return render_template("comparateur.html", error="Veuillez mettre un montant plus important")
        
     return render_template("comparateur.html")
 
-
-
-# @app.route('/destinations', methods=["GET", "POST"])
-# def destinations():
-#     villes = ["", "tunis", "montreal", "bangkok", "newyork", "marrakech", "venice", "madrid", "berlin", "london", "oslo"]
-#     documents = []
-#     if request.method == "POST":
-#         ville = request.form.get("ville")
-#         if ville: 
-#             documents = get_documents(ville)
-#             return redirect(url_for("ville", ville=ville, documents=documents))
-#     return render_template("destinations.html", villes=villes, documents=documents)
-
-
-# @app.route('/destinations/<ville>', methods=["GET", "POST"])
-# def ville(ville):
-#     villes = ["", "tunis", "montreal", "bangkok", "newyork", "marrakech", "venice", "madrid", "berlin", "london", "oslo"]
-#     documents = []
-#     documents = get_documents(ville)
-#     if request.method == "POST":
-#         other_ville = request.form.get("other_ville")
-#         if other_ville:
-#             documents = get_documents(other_ville)
-#             return redirect(url_for("other_ville", ville=ville, documents=documents))
-#     return render_template("ville.html", villes=villes, documents=documents, ville= ville)
-
-
-# @app.route('/destinations/<other_ville>')
-# def otherville():
-#     return render_template("ville.html")
 
 
 @app.route('/destinations', methods=["GET", "POST"])
@@ -90,6 +62,8 @@ def statistiques():
         if ville:
             return redirect(url_for("statville", ville=ville))
     return render_template("statistiques.html", villes=villes)
+
+
 
 @app.route('/statistiques/<ville>', methods=["GET", "POST"])
 def statville(ville):
