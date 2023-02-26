@@ -27,7 +27,7 @@ Nous ouvrons ensuite le terminal python de notre conteneur dans Docker puis nous
     
   > python Programmes/flask_site/app.py
 
-Nous pouvons alors accéder à l'application en suivant la première adresse proposée : '127.0.0.5066'.
+Nous pouvons alors accéder à l'application en suivant la première adresse proposée : 'http://127.0.0.1:5066'.
 
 
 Docker
