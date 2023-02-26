@@ -80,8 +80,8 @@
             <form method="POST">
 				<label for="ville">Choisissez une ville d'arrivée :</label>
 				<select id="ville" name="ville">
-				  {% for other_ville in villes %}
-					<option value="{{ other_ville }}">{{ other_ville }}</option>
+				  {% for ville in villes %}
+					<option value="{{ ville }}">{{ ville }}</option>
 				  {% endfor %}
 				</select>
 				<br><br>

@@ -2,9 +2,7 @@ import plotly.express as px
 import pandas as pd
 import pymongo
 from pymongo import MongoClient
-import collections
 from collections import Counter
-import os
 import random
 import json
 import plotly
