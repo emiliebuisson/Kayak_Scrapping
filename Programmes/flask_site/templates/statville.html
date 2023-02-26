@@ -3,6 +3,7 @@
 <head>
     <title>Adventure Travel - Statistiques</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='statville.css') }}">
+    <link rel="shortcut icon" href="../static/logo.png">
 </head>
 <body>
     <header>
@@ -34,11 +35,28 @@
             <div class='graph'>
                 <div id="graph1"></div>
             </div>
+            <div class="description">
+                Voici un diagramme en barres permettant de visualiser le prix moyen des vols selon le jour de la semaine. On peut ainsi constater le jour
+                où les vols sont en moyenne moins chers pour faire un vol Paris - {{ville}} d'après le scrapping que nous avons réalisé.
+            </div>
+
             <div class='graph'>
                 <div id="graph2"></div>
             </div>
+            <div class="description">
+                Nous observons ici les statistiques par compagnie aérienne en termes de durée moyenne et de prix moyen.
+                Certaines compagnies vont proposer des prix très attractifs aux dépens de la rapidité du trajet.
+                D'autres vont garder un rapport plus homogène. 
+                Nous pouvons donc visualiser ici les tendances qui peuvent indiquer les compagnies à privilégier selon  les priorités de chacun.
+            </div>
+
             <div class='graph'>
                 <div id="graph3"></div>
+            </div>
+            <div class="description">
+                Ce diagramme circulaire nous permet de visualiser la présence des compagnies aériennes pour une certaine destination. 
+                On pourra ainsi observer si des compagnies détiennent un certain monopole contrairement aux autres, 
+                ce qui peut nous indiquer un facteur sur leur popularité et leur fréquence quant aux propositions des meilleurs vols.
             </div>
         </div>
     </div>

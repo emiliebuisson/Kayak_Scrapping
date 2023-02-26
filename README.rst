@@ -11,6 +11,25 @@ les différentes destinations pour avoir une vue globale des tendances (jours o�
 compagnies plus présentes que d'autres pour certaines destination etc).
 Adventure Travel est pensé pour les aventuriers qui veulent à tout prix (ou presque) partir !
 
+
+Comment lancer l'app
+------
+
+Après avoir lancé Docker desktop, il faut dans un premier temps ouvrir un terminal et se placer dans le chemin du dossier.
+  
+  > cd ..\Kayak_Scrapping
+
+Il faudra ensuite exécuter la commande suivante ::
+
+  > docker-compose up -d
+
+Nous ouvrons ensuite le terminal python de notre conteneur dans Docker puis nous exécutons la commande suivante qui va lancer notre app.py ::
+    
+  > python Programmes/flask_site/app.py
+
+Nous pouvons alors accéder à l'application en suivant la première adresse proposée : '127.0.0.5066'.
+
+
 Docker
 ------
 Nous avons dans un premier temps configuré notre docker de façon à avoir les images suivantes : 
@@ -58,16 +77,14 @@ de façon à ce que l'on puisse les utiliser dans app.py. Ainsi, nous avons cré
 Egalement, nous avons créé une fonction qui va retourner les vols ayant un prix inférieur à celui entré. Cette fonction est donc utile dans le comparateur de prix que nous avons créé pour retourner tous les prix, sans
 regarder la destination puisque c'est cela finalement le concept d'Adventure Travel.
 
-Comment lancer l'app
+
+Pistes d'améliorations
 ------
 
-Après avoir lancé Docker desktop, il faudra ouvrir un terminal et se placer dans le chemin du dossier.
-Il faudra ensuite exécuter la commande suivante ::
-
-  > docker-compose up -d
-
-Nous ouvrons ensuite le terminal python de notre conteneur dans Docker puis nous nous plaçons dans le chemin 'Programmes/flask_site' avant de lancer ::
-    
-  > python app.py
-
-Nous pouvons alors accéder à l'application en suivant la première adresse proposée '127.0.0.5066'.
+Nous avons pensé à plusieurs fonctionnalités supplémentaires qui pourraient être intéressantes et pratiques. 
+Premièrement, nous nous sommes limitées ici à 10 destinations en raison du temps de scraping et de la sécurisation du programme par rapport au problème de MAJ rencontré,
+cependant, l'idée serait d'étendre un maximum le nombre de destinations possibles.
+Ensuite, nous avons opté pour des forms de sélection déroulants, mais en utilisant Elasticsearch nous pourrions combiner le form déroulant avec une entrée de texte flexible pour chercher une destination.
+Egalement, nous avons ici des vols aller pour une date précise (22/03/2023) avec une flexibilité de départ de plus ou moins 3 jours,
+il serait idéal d'ajouter des options de choix pour les conditions de date, de flexibilité, de trajets aller/retour, ou encore même de bagages. Nous pourrions alors aussi ajouter 
+une option pour choisir des préférences de continent ou pays.

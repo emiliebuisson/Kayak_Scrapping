@@ -7,7 +7,7 @@ import random
 import json
 import plotly
 
-
+# ----------------------------------------------------------------------------------------------------
 
 # fonction pour récupérer les données de la collection et calculer les statistiques nécessaires
 def get_stats(collection_name):
@@ -31,11 +31,6 @@ def get_stats(collection_name):
         duration_minutes = int(hours)*60 + int(minutes[:-1])
         durations.append(duration_minutes)
 
-    # calcul des statistiques nécessaires pour les graphiques
-    avg_price = sum(prices) / len(prices)
-    min_price = min(prices)
-    max_price = max(prices)
-    price_stats = (avg_price, min_price, max_price)
 
     companies_data = {}
     for company in set(companies):
@@ -43,10 +38,11 @@ def get_stats(collection_name):
         company_duration = [duration for i, duration in enumerate(durations) if companies[i] == company]
         companies_data[company] = (sum(company_duration)/len(company_duration), sum(company_prices)/len(company_prices))
 
-    return days, prices, price_stats, companies_data, companies
+    return days, prices, companies_data, companies
 
+# ----------------------------------------------------------------------------------------------------
 
-
+# fonction qui retourne le diagramme en bâtons des prix moyens des vols en fonction du jour de la semaine
 def plot_prices(days, prices):
     # création d'un dictionnaire pour stocker la somme des prix par jour
     prices_per_day = {}
@@ -67,22 +63,23 @@ def plot_prices(days, prices):
     # création d'une liste de tuples contenant la moyenne des prix pour chaque jour
     avg_prices = [(day, prices_per_day[day] / tickets_per_day[day]) for day in sorted(prices_per_day.keys(), reverse=True)]
 
-    # création du graphique
+    # création du graphique avec plotly express
     fig = px.bar(x=[x[0] for x in avg_prices], y=[x[1] for x in avg_prices], 
                  labels={"x": "Jours de la semaine", "y": "Prix moyens"}, 
                  title="Prix des billets en fonction des jours de la semaine")
     graphJSON1 = json.dumps(fig, cls = plotly.utils.PlotlyJSONEncoder)
     return(graphJSON1)
 
+# ----------------------------------------------------------------------------------------------------
 
-
+# fonction qui retourne la durée moyenne des trajets par compagnie aérienne ainsi que leur prix moyen
 def plot_company_prices(companies_data):
     # récupération des données pour le graphique
     companies = list(companies_data.keys())
     durations = [data[0] for data in companies_data.values()]
     prices = [data[1] for data in companies_data.values()]
 
-    # création du graphique
+    # création du graphique avec plotly express
     df = pd.DataFrame({'Compagnies aériennes': companies,
                        'Durée moyenne': durations,
                        'Prix moyen': prices})
@@ -91,7 +88,9 @@ def plot_company_prices(companies_data):
     graphJSON2 = json.dumps(fig2, cls = plotly.utils.PlotlyJSONEncoder)
     return(graphJSON2)
 
+# ----------------------------------------------------------------------------------------------------
     
+# fonction qui retourne un diagramme circulaire présentant la part de marché de chaque compagnie pour une destination
 
 def pie_chart(companies):
     # Calcul de la part de marché de chaque compagnie
@@ -108,80 +107,11 @@ def pie_chart(companies):
     graphJSON3 = json.dumps(fig3, cls = plotly.utils.PlotlyJSONEncoder)
     return(graphJSON3)
 
-    
 
-# # fonction pour afficher les deux graphiques
-# def show_stats(collection_name):
-#     # récupération des données
-#     days, prices, price_stats, companies_data, companies = get_stats(collection_name)
-
-#     fig1 =plot_prices(days, prices)
-#     fig2 = plot_company_prices(companies_data)
-#     fig3 =pie_chart(companies)
-
-#     # affichage des graphiques
-#     return fig1, fig2, fig3 
-
-
-
-
-
-
-# def find_flights_by_price(max_price):
-#     # création de l'instance du client MongoClient + spécification de l'adresse IP / port du serveur de la BDD
-#     client = MongoClient('mongodb://mongo')
-#     # Accès à la BDD en spécifiant nom + infos d'identification si besoin
-#     db = client['Kayak']
-
-#     # connexion à la base de données et récupération de toutes les collections de vols
-#     flights_collections = db.list_collection_names()
-
-#     # liste pour stocker tous les vols qui coûtent moins cher que max_price
-#     flights = []
-
-#     # boucle sur toutes les collections de vols
-#     for collection_name in flights_collections:
-#         collection = db[collection_name]
-#         # récupération de tous les vols qui coûtent moins cher que max_price
-#         result = collection.find({"price": {"$lt": max_price}})
-#         # ajout des vols à la liste
-#         for doc in result:
-#             flights.append(doc)
-
-#     return flights
-
-
-
-
-# fonction pour le comparateur de prix
-
-# def find_cheaper_flights(max_price):
-#     client = pymongo.MongoClient("mongodb://mongo")
-#     db = client["Kayak"]
-#     # liste pour stocker tous les vols qui coûtent moins cher que max_price
-#     flights = []
-#     # liste pour stocker les noms des collections déjà traitées
-#     collections_done = []
-
-#     # boucle jusqu'à ce qu'on ait récupéré un vol dans 3 collections différentes
-#     while len(flights) < 3:
-#         # choix aléatoire d'une collection parmi celles qui n'ont pas encore été traitées
-#         remaining_collections = [col for col in db.list_collection_names() if col not in collections_done]
-#         if not remaining_collections:
-#             # si toutes les collections ont été traitées sans trouver de vol correspondant, on arrête la boucle
-#             break
-#         collection_name = random.choice(remaining_collections)
-#         collection = db[collection_name]
-#         # récupération d'un vol qui coûte moins cher que max_price dans cette collection
-#         result = collection.find_one({"price": {"$lt": max_price}})
-#         if result:
-#             # si un vol a été trouvé, on l'ajoute à la liste des vols trouvés
-#             flights.append(result)
-#             # on ajoute la collection traitée à la liste des collections déjà traitées
-#             collections_done.append(collection_name)
-
-#     return flights, collections_done
-
+# ----------------------------------------------------------------------------------------------------
+ 
+# fonction pour le comparateur de prix qui va retourner un vol de chaque destination 
+# (s'il en trouve un en dessous du prix indiqué), avec un prix au plus proche du prix entré
 
 def find_cheaper_flights(max_price):
     client = pymongo.MongoClient("mongodb://mongo")
@@ -199,73 +129,9 @@ def find_cheaper_flights(max_price):
     return flights, collections_done
 
 
-# def find_cheaper_flights(max_price):
-#     client = pymongo.MongoClient("mongodb://mongo")
-#     db = client["Kayak"]
-#     collections = db.list_collection_names()
-#     flights = []
-#     collections_done = []
-#     index = 0
-#     for collection_name in collections:
-#         if collection_name in collections_done:
-#             continue
-#         collection = db[collection_name]
-#         result = collection.find({"price": {"$lte": max_price}}).sort("price", pymongo.DESCENDING).limit(1)
-#         for doc in result:
-#             flights.append(doc)
-#             collections_done.append(collection_name)
-#             index += 1
-#             break
-#     return flights, collections_done, list(range(index))
+# ----------------------------------------------------------------------------------------------------
 
-
-
-
-
-
-# def find_cheaper_flights(max_price):
-#     client = pymongo.MongoClient("mongodb://mongo")
-#     db = client["Kayak"]
-#     # liste pour stocker tous les vols qui coûtent moins cher que max_price
-#     flights = []
-#     # liste pour stocker les noms des collections déjà traitées
-#     collections_done = []
-
-#     # boucle jusqu'à ce qu'on ait récupéré un vol dans 3 collections différentes
-#     while len(flights) < 3:
-#         # choix aléatoire d'une collection parmi celles qui n'ont pas encore été traitées
-#         remaining_collections = [col for col in db.list_collection_names() if col not in collections_done]
-#         if not remaining_collections:
-#             # si toutes les collections ont été traitées sans trouver de vol correspondant, on sort de la boucle
-#             break
-#         collection_name = random.choice(remaining_collections)
-#         collection = db[collection_name]
-#         # récupération d'un vol qui coûte moins cher que max_price dans cette collection
-#         result = collection.find_one({"price": {"$lt": max_price}})
-#         if result:
-#             # si un vol a été trouvé, on l'ajoute à la liste des vols trouvés
-#             flights.append(result)
-#             # on ajoute la collection traitée à la liste des collections déjà traitées
-#             collections_done.append(collection_name)
-
-#     return flights, collections_done
-
-
-# def get_random_documents():
-#     client = pymongo.MongoClient("mongodb://mongo")
-#     db = client["Kayak"]
-#     collection_names = db.list_collection_names()
-#     documents = []
-#     name_city = []
-#     for collection_name in collection_names:
-#         collection = db[collection_name]
-#         random_documents = collection.aggregate([{ "$sample": { "size": 2 } }])
-#         documents.extend(random_documents)
-#         name_city.append(collection_name)
-#     random.shuffle(documents)
-#     final = documents[:20]
-#     return final, name_city
-
+# fonction utilisée pour la page Destination qui retourne 15 documents d'une même collection (destination)
 
 def get_documents(collection_name):
     client = pymongo.MongoClient("mongodb://mongo")
@@ -273,3 +139,5 @@ def get_documents(collection_name):
     collection = db[collection_name]
     documents = list(collection.find().limit(15))
     return documents
+
+# ----------------------------------------------------------------------------------------------------
